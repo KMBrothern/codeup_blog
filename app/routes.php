@@ -11,7 +11,30 @@
 |
 */
 
-Route::get('/', function()
+// Route::get('/', function()
+// {
+// 	return View::make('hello');
+// });
+
+// Route::get('/resume', function()
+// {
+//     return 'This is my resume';    
+// });
+
+// Route::get('/portfolio', function()
+// {
+//     return 'This is my portfolio';
+// });
+
+// Route::get('sayhello/{name}', function($name)
+// {
+//     return View::make('my-first-view');
+// });
+
+Route::get('/rolldice/{guess}', function($guess)
 {
-	return View::make('hello');
+    $data = array(
+        'guess' => $guess, 'random' => rand(1, 6)
+    );
+    return View::make('roll-dice')->with($data);
 });
