@@ -24,10 +24,10 @@
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                     <li class="">
-                        <a class="page-scroll" href="{{{ action ('HomeController@showResume') }}}">Resumé</a>
+                        <a class="page-scroll" href="{{{ action ('AboutController@getResume') }}}">Resumé</a>
                     </li>
                     <li class="active">
-                        <a class="page-scroll" href="{{{ action ('HomeController@showPortfolio') }}}">Portfolio</a>
+                        <a class="page-scroll" href="{{{ action ('AboutController@getPortfolio') }}}">Portfolio</a>
                     </li>
                     <li class="">
                         <a class="page-scroll" href="#blog">Blog</a>

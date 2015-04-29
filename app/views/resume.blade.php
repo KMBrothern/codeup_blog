@@ -1,6 +1,5 @@
 @extends('layouts.master')
-<!-- {{-- everything in a child blade needs to be inside of a section
-to work properly, no renegades!! --}} -->
+
 @section('head')
 <head>
   <link rel="stylesheet" href="/css/resume.css">

@@ -14,9 +14,7 @@
 
 Route::get('/', 'HomeController@showWelcome');
 
-Route::get('/resume', 'HomeController@showResume');
-
-Route::get('/portfolio', 'HomeController@showPortfolio');
+Route::controller('about', 'AboutController');
 
 Route::get('sayhello/{name}', 'HomeController@sayHello');
 
