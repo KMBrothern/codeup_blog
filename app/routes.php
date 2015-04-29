@@ -16,6 +16,8 @@ Route::get('/', 'HomeController@showWelcome');
 
 Route::controller('about', 'AboutController');
 
+Route::resource('posts', 'PostsController');
+
 Route::get('sayhello/{name}', 'HomeController@sayHello');
 
 Route::get('/rolldice/{guess}', 'HomeController@showGuess');
