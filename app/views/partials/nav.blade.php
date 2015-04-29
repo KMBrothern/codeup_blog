@@ -1,4 +1,3 @@
-<!-- This is where I'll break out my navbar -->
 <nav class="navbar navbar-custom navbar-fixed-top top-nav-collapse" role="navigation">
         <div class="container">
             <div class="navbar-header">

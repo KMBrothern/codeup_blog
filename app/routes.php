@@ -24,4 +24,21 @@ Route::get('/rolldice/{guess}', 'HomeController@showGuess');
 
 Route::get('/whackarapper', 'HomeController@showWhack');
 
+Route::get('orm-test', function ()
+{
+    $post1 = new Post();
+    $post1->title = 'Eloquent is awesome!';
+    $post1->body  = 'It is super easy to create a new post.';
+    $post1->save();
+
+    // $posts = Post::all();
+    // return $posts;
+
+    // $post = Post::find(1);
+    // $post->title = 'Some New Post Title';
+    // $post->save();
+});
+
+
+
 

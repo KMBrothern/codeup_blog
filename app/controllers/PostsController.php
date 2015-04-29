@@ -9,8 +9,13 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		return 'Output list of all posts.';
+		$posts = Post::all();
+		$data = array(
+        	'posts' => $posts
+    );
+    return View::make('posts.index')->with($data);
 	}
+	
 
 
 	/**
@@ -20,7 +25,7 @@ class PostsController extends \BaseController {
 	 */
 	public function create()
 	{
-		return 'Created a new post!';
+		return View::make('posts.create');	
 	}
 
 
@@ -31,7 +36,14 @@ class PostsController extends \BaseController {
 	 */
 	public function store()
 	{
-		return 'Added a new post to the posts table';
+		$inputs = Input::all();
+		$post = new Post();
+		$post->title = $inputs['title'];
+		$post->body = $inputs['content'];
+		$post->save();
+		return Redirect::action('PostsController@index')->withInput();
+
+
 	}
 
 
@@ -43,7 +55,11 @@ class PostsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		return "Output the post found at id: $id";
+		$post = Post::find($id);
+		$data = array(
+        	'post' => $post
+    );
+    return View::make('posts.show')->with($data);
 	}
 
 
