@@ -1,0 +1,107 @@
+.custom {
+   cursor: url('/img/boxing-glove.png'), pointer;
+}
+
+html{
+	background-color: #ab0c13;
+	background-image: url("/img/vintageredcircus.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 190px;
+}
+
+
+#startGame{
+	background: #ab0c13;
+	font-size: 50px;
+	opacity: .8;
+	text-shadow: 0 0 3px #f2cb28, 0 0 5px #fff;
+}
+.subtitle{
+	font-size: 25px;
+}
+.mainTitle{
+	font-size: 80px;
+	text-align: center;
+	margin-top: -295px;
+	text-shadow: 0 0 3px #f2cb28, 0 0 5px #fff;
+}
+.display{
+	float: left;
+	position:relative;
+	font-size: 50px;
+}
+#container{
+	height: 373px;
+	width: 497px;
+	margin-left: 465px;
+	margin-top: 10px;
+	position: relative;
+}
+.moleDivs{
+	background: #ab0c13;
+	height: 120px;
+	width: 120px;
+	float: left;
+	border: 2px solid transparent;
+	border-radius: 12px;
+	position: relative;
+}
+.square1{
+	background-image: url("/img/image-1.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.square2{
+	background-image: url("/img/image-2.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.square3{
+	background-image: url("/img/image-3.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.square4{
+	background-image: url("/img/image-4.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.square5{
+	background-image: url("/img/image-5.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.square6{
+	background-image: url("/img/image-6.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.square7{
+	background-image: url("/img/image-7.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.square8{
+	background-image: url("/img/image-8.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.square9{
+	background-image: url("/img/image-9.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.square10{
+	background-image: url("/img/image-10.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+}.square11{
+	background-image: url("/img/image-11.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+}.square0{
+	background-image: url("/img/image-12.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+}

@@ -10,31 +10,18 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
+// Making routes exercises
 
-// Route::get('/', function()
-// {
-// 	return View::make('hello');
-// });
+Route::get('/', 'HomeController@showWelcome');
 
-// Route::get('/resume', function()
-// {
-//     return 'This is my resume';    
-// });
+Route::get('/resume', 'HomeController@showResume');
 
-// Route::get('/portfolio', function()
-// {
-//     return 'This is my portfolio';
-// });
+Route::get('/portfolio', 'HomeController@showPortfolio');
 
-// Route::get('sayhello/{name}', function($name)
-// {
-//     return View::make('my-first-view');
-// });
+Route::get('sayhello/{name}', 'HomeController@sayHello');
 
-Route::get('/rolldice/{guess}', function($guess)
-{
-    $data = array(
-        'guess' => $guess, 'random' => rand(1, 6)
-    );
-    return View::make('roll-dice')->with($data);
-});
+Route::get('/rolldice/{guess}', 'HomeController@showGuess');
+
+Route::get('/whackarapper', 'HomeController@showWhack');
+
+
