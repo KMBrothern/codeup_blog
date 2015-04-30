@@ -25,7 +25,7 @@
       </div>
       <div class="form-group">
         <label for="exampleInputBody1">Post Content</label>
-        <textarea name="content" class="form-control" id="exampleInputContent1" placeholder="Enter Post Content" value="{{{ Input::old('content') }}}"></textarea>
+        <textarea name="content" class="form-control" id="exampleInputContent1" rows="4" placeholder="Enter Post Content" value="{{{ Input::old('content') }}}"></textarea>
       </div>
       
     <hr>
