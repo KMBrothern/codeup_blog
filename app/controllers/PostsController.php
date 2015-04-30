@@ -55,11 +55,19 @@ class PostsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		$post = Post::find($id);
-		$data = array(
-        	'post' => $post
-    );
-    return View::make('posts.show')->with($data);
+		try {
+			$post = Post::findOrFail($id);
+			$data = array(
+        		'post' => $post
+    		);
+    		return View::make('posts.show')->with($data);
+    	} catch(Exception $e) {
+    		$data = array(
+    			'error' => $e->getMessage()
+
+    			);
+    		return View::make('errors.exceptions')->with($data);
+    	}
 	}
 
 

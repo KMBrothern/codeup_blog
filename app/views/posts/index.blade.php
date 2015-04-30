@@ -10,8 +10,9 @@
     <h1>All Posts</h1>
     <hr>
     <ul>
-        @foreach($posts as $post)<h2>{{$post['title']}}</h2>
-            <p>{{$post['body']}}</p>
+        @foreach($posts as $post)
+            <h2>{{{ $post->title }}}</h2>
+            <p>{{{ $post->body }}}</p>
         @endforeach
 
     </ul>

@@ -1,14 +1,12 @@
 @extends('layouts.master')
 
 @section('head')
-
 <head>
   <link rel="stylesheet" href="/css/resume.css">
 </head>
 @stop
 
 @section('content')
-<h1>{{{ $post->title }}}</h1>
-<p>{{{ $post->body }}}</p>
-
+<h2>Sorry, No Results Found</h2>
+<p>{{{ $error }}}</p>
 @stop
