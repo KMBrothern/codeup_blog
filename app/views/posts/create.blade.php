@@ -10,6 +10,13 @@
 
 <h1>Create Your Post</h1>
 <hr>
+  @if($errors->all())
+    <div class="alert-danger" role="alert">
+      @foreach($errors->all() as $error)
+        {{ $error }}
+      @endforeach
+    </div>
+  @endif
     <div class="container">
        <form method="POST" action="{{{ action ('PostsController@store') }}}">
       <div class="form-group">
