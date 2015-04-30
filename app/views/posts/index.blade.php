@@ -16,4 +16,5 @@
         @endforeach
 
     </ul>
+    {{$posts->links()}}
 @stop
