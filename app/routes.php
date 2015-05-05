@@ -24,6 +24,12 @@ Route::get('/rolldice/{guess}', 'HomeController@showGuess');
 
 Route::get('/whackarapper', 'HomeController@showWhack');
 
+Route::get('/login', 'LoginController@login');
+
+Route::post('/login', 'LoginController@doLogin');
+
+Route::get('/logout', 'LoginController@logout');
+
 Route::get('orm-test', function ()
 {
     $post1 = new Post();
@@ -37,6 +43,14 @@ Route::get('orm-test', function ()
     // $post = Post::find(1);
     // $post->title = 'Some New Post Title';
     // $post->save();
+});
+
+Route::get('test404', function()
+{
+    Log::info('This is some useful information.');
+    Log::warning('Something could be going wrong.');
+    Log::error('Something is really going wrong.');
+    App::abort(404);
 });
 
 

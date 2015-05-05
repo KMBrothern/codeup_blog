@@ -8,7 +8,7 @@
 
 @section('content')
 
-<h1>Create Your Post</h1>
+<h1>Edit Your Post</h1>
 <hr>
   @if($errors->all())
     <div class="alert-danger" role="alert">
@@ -18,7 +18,7 @@
     </div>
   @endif
     <div class="container">
-    {{ Form::open(array('action' => 'PostsController@store')) }}
+    {{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'put', 'files' => true)) }}
     @include('posts.form')
   </div>
   @stop

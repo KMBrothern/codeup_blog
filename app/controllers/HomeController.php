@@ -22,12 +22,12 @@ class HomeController extends BaseController {
 
 	public function showResume()
 	{
-    return View::make('resume');   
+    return View::make('resume');
 	}
 
 	public function showPortfolio()
 	{
-    return View::make('portfolio');   
+    return View::make('portfolio');
 	}
 
 	public function sayHello($name)
@@ -48,7 +48,8 @@ class HomeController extends BaseController {
 
 	public function showWhack()
 	{
-    return View::make('whackarapper');   
+    return View::make('whackarapper');
 	}
+
 
 }

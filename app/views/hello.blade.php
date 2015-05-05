@@ -30,7 +30,7 @@
                 <p class="aqua">I am a curious minded individual who aspires to dream and create in every shade <em><strong><span class="icolor">i</span><span class="mcolor">m</span><span class="acolor">a</span><span class="gcolor">g</span><span class="icolor2">i</span><span class="ncolor">n</span><span class="acolor">a</span><span class="bcolor">b</span><span class ="lcolor">l</span><span class="ecolor">e.</span></strong></em> Currently a student <strong>Web Developer</strong>, who loves talking to my rubber duck, staring at my screen blankly when my code isn't working and with jubilation when it does.
                 <p class="aqua">Deathly allergic to boxes, I can be found breaking out of them frequently. When I'm not learning: you can find me watching one of my shows, fervently clicking away on my <i class="fa fa-apple fa-lg"></i> and multi-tasking like a boss.</p>
                 <p class="aqua">Feel free to find me on the interwebs. In fact, I highly recommend it, as my awesomeness truly is awesome.</p>
-                <a href="/runlvl6.html#contact" class="btn btn-default btn-lg">Find Me On the webs <img src="/img/waldo.jpg"></a>
+                <a href="#contact" class="btn btn-default btn-lg">Find Me On the webs <img src="/img/waldo.jpg"></a>
             </div>
         </div>
     </section>
@@ -49,8 +49,8 @@
                     <p>"If you fail to plan, you are planning to fail" - Benjamin Franklin
                         <br>
                         <br>
-                    <h4>To see more of what inspires me, how I think and what I like visit me at:</h4></p>
-                    <a href="#blog" class="btn btn-default btn-lg">Visit Blog Page</a>
+                    <h4>To see more of what inspires me, how I think and what I like visit my blog <i class="fa fa-arrow-down"></i></h4></p>
+                    <a href="{{{ action('PostsController@index') }}}" class="btn btn-default btn-lg">Visit Blog Page</a>
                     <br>
                     <p> Same framework. New beginnings. Run Level 6: Welcome To The Reboot</p>
 

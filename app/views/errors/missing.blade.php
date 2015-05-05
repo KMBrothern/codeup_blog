@@ -8,5 +8,4 @@
 
 @section('content')
 <h2>Sorry, No Results Found</h2>
-<p>{{{ $error }}}</p>
 @stop

@@ -29,7 +29,7 @@
                         <a class="page-scroll" href="{{{ action ('AboutController@getPortfolio') }}}">Portfolio</a>
                     </li>
                     <li class="">
-                        <a class="page-scroll" href="#blog">Blog</a>
+                        <a class="page-scroll" href="{{{ action ('PostsController@index') }}}">Blog</a>
                     </li>
                 </ul>
             </div>

@@ -20,7 +20,7 @@ section {
 	 
 }
 body{
-	padding-top: 60px;
+	padding-top: 90px;
     background-color: #000;
 	color: #fff;
 	background-image: url(/img/congruent_outline.png)
@@ -37,3 +37,24 @@ p{
 .btn-default:focus{
 	border: 1px solid #81d8d0; 
 	background-color: #81d8d0; 
+}
+
+a{
+    color: #000;
+}
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #81d8d0;
+}
+.centered{
+    text-align: center;
+}
+.edit{
+    color: #81d8d0;
+    font-size: 16px;
+}
+.edit:hover,
+.edit:focus {
+    color: #000;
+}
