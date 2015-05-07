@@ -7,13 +7,13 @@
 
 @stop
 @section('content')
-     
+
 <header>
+<br>
+<br>
 <h1>My Portfolio</h1>
-<p>
-Email: kmbrothern85@gmail.com
-Website: www.runlvl6.com</p>
 </header>
+
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
@@ -44,7 +44,8 @@ Website: www.runlvl6.com</p>
           <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
         </div>
       </div>
+    </div>
       <hr>
-      <div id="footer"><a href="{{{ action ('HomeController@showWelcome') }}}" class="btn btn-default btn-lg">Back to Run Level 6</a></div>
+      <div id="footer"><a href="{{{ action ('HomeController@showWelcome') }}}" class="btn btn-default btn-lg"><i class="fa fa-refresh fa-spin"></i> Back to Run Level 6</a></div>
 
 @stop

@@ -5,7 +5,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="{{{ action ('HomeController@showWelcome') }}}">
-                    <i class="fa fa-play-circle"></i>  <span class="light">RL6</span> 
+                    <i class="fa fa-refresh fa-spin"></i><span class="light"> RL6</span> 
                 </a>
             </div>
 
@@ -17,10 +17,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="">
-                        <a class="page-scroll" href="#about">About Me</a>
+                        <a class="page-scroll" href="/#about">About Me</a>
                     </li>
                     <li class="">
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="/#contact">Contact</a>
                     </li>
                     <li class="">
                         <a class="page-scroll" href="{{{ action ('AboutController@getResume') }}}">Resumé</a>
@@ -31,15 +31,12 @@
                     <li class="">
                         <a class="page-scroll" href="{{{ action ('PostsController@index') }}}">Blog</a>
                     </li>
-                </ul>
-                {{-- My login/logout area --}}
-                <ul class="nav navbar-nav navbar-right">
                     @if(Auth::check())
                         <li><a href="{{{ action('LoginController@logout') }}}">Logout</a></li>
-                    @else
-                        <li><a href="{{{ action('LoginController@login') }}}">Login</a></li>
                     @endif
                 </ul>
+                {{-- My login/logout area --}}
+                {{-- End of login/logout area --}}
             </div>
             <!-- /.navbar-collapse -->
         </div>

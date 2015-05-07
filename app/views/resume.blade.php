@@ -53,5 +53,5 @@ Website: www.runlvl6.com</p>
   </p>
   </section>
 </div>
-<div id="footer"><a href="{{{ action ('HomeController@showWelcome') }}}" class="btn btn-default btn-lg">Back to Run Level 6</a></div>
+<div id="footer"><a href="{{{ action ('HomeController@showWelcome') }}}" class="btn btn-default btn-lg"><i class="fa fa-refresh fa-spin"></i> Back to Run Level 6</a></div>
 @stop

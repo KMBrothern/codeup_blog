@@ -1,7 +1,6 @@
 .intro{
 	background: url(/img/kbfly.jpg) repeat-x center;
 
-	
 }
 #blogHeader{
 	opacity: 0.7
@@ -55,7 +54,7 @@ color: #f45;
 color: #ffd700;
 }
 .acolor{
-color: #ff00ff ;	
+color: #ff00ff ;
 }
 .gcolor{
 color: #ee8011;
@@ -73,10 +72,15 @@ color: #088da5;
 color: #b262df ;
 }
 .ecolor{
-color: #2be382;	
+color: #2be382;
 }
-
-/*ul.pagination *{
-	background-color: #000;
-  	color: #81d8d0;
-}*/
+a {
+    color: #81d8d0;
+}
+.edit:hover,
+.edit:focus {
+    color: #000;
+}
+.login{
+	font-size: 12px;
+}

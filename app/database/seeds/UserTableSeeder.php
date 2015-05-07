@@ -23,8 +23,8 @@ class UserTableSeeder extends Seeder {
         {
 
             $user = User::create(array(
-                'username' => $faker->userName,
-                'email'    => $faker->email,
+                'username' => $faker->unique()->userName,
+                'email'    => $faker->unique()->email,
                 'password' => $faker->word
                 ));
         }

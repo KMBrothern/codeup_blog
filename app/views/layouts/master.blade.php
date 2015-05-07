@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    @include('partials.head') 
+    @include('partials.head')
     @yield('head')
     @include('partials.nav')
     @if (Session::has('successMessage'))
