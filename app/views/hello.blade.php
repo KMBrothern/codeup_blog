@@ -63,7 +63,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Contact Keyasha</h2>
-                <p class="aqua">To mentor me, ask me questions, give me advice, share some knowledge, tell me how awesome I am, or to just say hello...feel free to find me on the interwebs! </p>
+                <p class="aqua">To mentor me, ask me questions, tell me how awesome I am, or to just say hello...feel free to find me on the interwebs! </p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
                         <a href="https://twitter.com/Comp_Code_Killa" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name"></span></a>
