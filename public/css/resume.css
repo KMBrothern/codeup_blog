@@ -57,3 +57,6 @@ a:focus {
 .form-inline{
     margin-left: 10px;
 }
+.login{
+    font-size: 12px;
+}
