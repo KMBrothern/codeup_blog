@@ -32,6 +32,14 @@
                         <a class="page-scroll" href="{{{ action ('PostsController@index') }}}">Blog</a>
                     </li>
                 </ul>
+                {{-- My login/logout area --}}
+                <ul class="nav navbar-nav navbar-right">
+                    @if(Auth::check())
+                        <li><a href="{{{ action('LoginController@logout') }}}">Logout</a></li>
+                    @else
+                        <li><a href="{{{ action('LoginController@login') }}}">Login</a></li>
+                    @endif
+                </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>

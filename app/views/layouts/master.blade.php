@@ -17,6 +17,6 @@
     </body>
 @include('partials.footer')
 <script>
-    $('.alert').fadeOut(4000, 'swing');
+    $('.alert').fadeOut(7000, 'swing');
 </script>
 </html>

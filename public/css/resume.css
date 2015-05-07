@@ -8,16 +8,12 @@ header {
 
 }
 
-	      
 }
 section {
     width:350px;
     float:left;
     padding:10px;
 
-
-
-	 
 }
 body{
 	padding-top: 90px;
@@ -29,14 +25,14 @@ p{
 	color: #fff;
 }
 .btn-default{
-	border: 1px solid #fff; 
+	border: 1px solid #fff;
 	color: #81d8d0;
 
 }
 .btn-default:hover,
 .btn-default:focus{
-	border: 1px solid #81d8d0; 
-	background-color: #81d8d0; 
+	border: 1px solid #81d8d0;
+	background-color: #81d8d0;
 }
 
 a{
@@ -57,4 +53,7 @@ a:focus {
 .edit:hover,
 .edit:focus {
     color: #000;
+}
+.form-inline{
+    margin-left: 10px;
 }

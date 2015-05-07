@@ -5,6 +5,7 @@ class PostsController extends \BaseController {
     public function __construct()
     {
         $this->beforeFilter('auth', array('except' => array('index', 'show')));
+        parent::__construct();
     }
 	/**
 	 * Display a listing of the resource.
@@ -13,13 +14,41 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		$posts = Post::paginate(4);
+        $posts = Post::with('user')->orderBy('created_at', 'DESC')->paginate(10);
+
 		$data = array(
         	'posts' => $posts
-    );
+        );
     return View::make('posts.index')->with($data);
 	}
-	
+
+  public function search()
+{
+    $search = Input::get('search');
+    $searchResult = Post::where('title', 'like', $search)->paginate(1);
+    return View::make('search.search')
+            ->with('search', $search)
+            ->with('searchResult', $searchResult);
+}
+
+    // public function search()
+    // {
+    // $query = Post::with('user');
+
+    // $search = Input::get('search');
+
+    // $query->where('title', 'like', '%' . $search . '%');
+    // $query->orWhere('body', 'like', '%' . $search . '%');
+
+    // $query->orWhereHas('user', function($q) {
+    //     $q->where('username', 'like', '%bbatsche%');
+    // });
+
+    // $post = $query->orderBy('created_at', 'DESC')->paginate(10);
+
+
+    // return View::make('posts.search-results')->with($post);
+    // }
 
 
 	/**
@@ -148,7 +177,7 @@ class PostsController extends \BaseController {
             $post->slug = Input::get('title');
             $post->save();
 
-            Session::flash('successMessage', 'Nice, your post\'s edit was submitted successfully!');
+            Session::flash('successMessage', 'Nice, your edit was submitted successfully!');
             return Redirect::action('PostsController@index');
         }
 	}
@@ -169,9 +198,5 @@ class PostsController extends \BaseController {
         return Redirect::action('PostsController@index');
 	}
 
-    // public function validateFields
-    // {
-
-    // }
 
 }

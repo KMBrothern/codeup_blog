@@ -7,7 +7,17 @@
 @stop
 
 @section('content')
-    <h1 class="centered">All Posts</h1>
+{{{ var_dump($_GET) }}}
+
+    <h1 class="centered">All Blog Posts</h1>
+    <form class="form-inline" method="GET">
+      <div class="form-group">
+          {{ Form::open(array('method' =>'GET','url'=> '/search')) }}
+        <label for="search">Search All Posts</label>
+        <input type="text" name="search" class="form-control" id="searchBar" placeholder="Enter Search Here">
+      </div>
+      <button type="submit" class="btn btn-default">Search</button>
+        {{ Form::close() }}
     <hr>
     <ul>
         @foreach($posts as $post)

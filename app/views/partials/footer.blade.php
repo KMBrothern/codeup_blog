@@ -1,7 +1,6 @@
 <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>      Same framework. New beginnings. Run Level 6 : Welcome To The Reboot.      </p>
             <p>Copyright © Keyasha Brothern {{ date('Y') }}</p>
         </div>
     </footer>

@@ -11,12 +11,10 @@ class UserTableSeeder extends Seeder {
     */
     public function run()
     {
-
-        DB::table('users')->delete();
         $user1 =  new User;
         $user1->username = 'kb';
-        $user1->email = 'kmb85@gmail.com';
-        $user1->password = 'password';
+        $user1->email    = 'kmb85@gmail.com';
+        $user1->password = $_ENV['USER_PASS'];
         $user1->save();
 
         $faker = Factory::create();
@@ -26,7 +24,7 @@ class UserTableSeeder extends Seeder {
 
             $user = User::create(array(
                 'username' => $faker->userName,
-                'email' => $faker->email,
+                'email'    => $faker->email,
                 'password' => $faker->word
                 ));
         }

@@ -33,7 +33,7 @@ class User extends BaseModel implements UserInterface, RemindableInterface {
     *Save hashed password
     *
     *return string
-    */ 
+    */
 
     public function setPasswordAttribute($value)
     {

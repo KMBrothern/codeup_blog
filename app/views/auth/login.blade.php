@@ -7,7 +7,6 @@
 @stop
 
 @section('content')
-{{{ var_dump($_POST) }}}
 
 <h1>Login To Your Account</h1>
 <hr>
