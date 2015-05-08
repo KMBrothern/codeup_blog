@@ -21,7 +21,6 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>About Keyasha</h2>
-    <!-- div id="border_page" and "border2" make two rectangular horizontal borders around this section of the image spanning full width of page -->
                 <div id="border_page">
                     <div id="border2"><img id="border_pic" class="kb" src="/img/kbsmile.jpg"></div>
                 </div>
@@ -66,7 +65,7 @@
                 <p class="aqua">To mentor me, ask me questions, tell me how awesome I am, or to just say hello...feel free to find me on the interwebs! </p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="https://twitter.com/Comp_Code_Killa" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name"></span></a>
+                        <a href="https://twitter.com/Keyasha_B" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name"></span></a>
                     </li>
                     <li>
                         <a href="https://github.com/KMBrothern" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name"></span></a>
@@ -78,7 +77,6 @@
                     <li>
                         <a href="https://facebook.com/kmbrothern" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name"></span></a>
                     </li>
-                    
                 </ul>
             </div>
         </div>
