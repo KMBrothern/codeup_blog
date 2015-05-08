@@ -45,7 +45,8 @@
         </div>
       </div>
     </div>
+  </div>
       <hr>
-      <div id="footer"><a href="{{{ action ('HomeController@showWelcome') }}}" class="btn btn-default btn-lg"><i class="fa fa-refresh fa-spin"></i> Back to Run Level 6</a></div>
+      <div class="container" id="footer"><a href="{{{ action ('HomeController@showWelcome') }}}" class="btn btn-default btn-lg"><i class="fa fa-refresh fa-spin"></i> Back to Run Level 6</a></div>
 
 @stop

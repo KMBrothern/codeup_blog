@@ -48,10 +48,11 @@ Website: www.runlvl6.com</p>
     <h1>Career Development</h1>
     <ul>
       <li><strong>Codeup</strong>, San Antonio TX; Graduation May 26, 2015, Web Development</li><br>
-      <li><strong>Rackspace Open Cloud Academy</strong>, San Antonio TX; Graduation November 15, 2013, 
+      <li><strong>Rackspace Open Cloud Academy</strong>, San Antonio TX; Graduation November 15, 2013,
   Linux Systems Administration</li>
   </p>
   </section>
 </div>
-<div id="footer"><a href="{{{ action ('HomeController@showWelcome') }}}" class="btn btn-default btn-lg"><i class="fa fa-refresh fa-spin"></i> Back to Run Level 6</a></div>
+<hr>
+<div class="container" id="footer"><a href="{{{ action ('HomeController@showWelcome') }}}" class="btn btn-default btn-lg"><i class="fa fa-refresh fa-spin"></i> Back to Run Level 6</a></div>
 @stop

@@ -25,8 +25,8 @@ class PostsController extends \BaseController {
   public function search()
 {
     $search = Input::get('search');
-    $searchResult = Post::where('title', 'like', $search)->paginate(1);
-    return View::make('search.search')
+    $searchResult = Post::where('title', 'like', '%' . $search . '%')->paginate(1);
+    return View::make('posts.search-results')
             ->with('search', $search)
             ->with('searchResult', $searchResult);
 }

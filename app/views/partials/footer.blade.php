@@ -2,7 +2,9 @@
     <footer>
         <div class="container text-center">
             <p>Copyright © Keyasha Brothern {{ date('Y') }}</p>
+        @if(!Auth::check())
             <p><a class="edit login" href="{{{ action('LoginController@login') }}}">Login</a></p>
+        @endif
         </div>
     </footer>
 
