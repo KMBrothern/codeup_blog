@@ -3,6 +3,7 @@
 @section('head')
 <head>
   <link rel="stylesheet" href="/css/resume.css">
+
 </head>
 
 @stop
@@ -48,5 +49,8 @@
   </div>
       <hr>
       <div class="container" id="footer"><a href="{{{ action ('HomeController@showWelcome') }}}" class="btn btn-default btn-lg"><i class="fa fa-refresh fa-spin"></i> Back to Run Level 6</a></div>
+
+
+
 
 @stop
